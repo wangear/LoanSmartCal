@@ -1,0 +1,26 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="wangjoo.pangloancalculator.ShowAccountActivity" >
+
+	<item android:id="@+id/action_create_account"
+	      android:title="@string/create_account"
+	      android:orderInCategory="100"
+	      android:showAsAction="never" />
+	<item android:id="@+id/action_repayment"
+	      android:title="@string/repayment"
+	      android:orderInCategory="100"
+	      android:showAsAction="never" />
+	<item android:id="@+id/action_repayment_cancel"
+	      android:title="@string/repayment_cancel"
+	      android:orderInCategory="100"
+	      android:showAsAction="never" />
+	<item android:id="@+id/action_modify_interest"
+	      android:title="@string/modify_interest"
+	      android:orderInCategory="100"
+	      android:showAsAction="never" />
+	<item android:id="@+id/action_delete_account"
+	      android:title="@string/delete_account"
+	      android:orderInCategory="100"
+	      android:showAsAction="never" />
+
+</menu>

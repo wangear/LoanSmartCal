@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:ads="http://schemas.android.com/apk/res-auto"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:paddingLeft="0dp"
+              android:paddingRight="0dp">
+
+	<com.google.android.gms.ads.AdView
+		android:id="@+id/adView"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		ads:adSize="MEDIUM_RECTANGLE"
+		ads:adUnitId="ca-app-pub-7900628235485004/6829637910"/>
+
+	<LinearLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content">
+
+		<Button
+			android:id="@+id/btn_ok"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/ok"/>
+
+		<Button
+			android:id="@+id/btn_cancel"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/cancel"/>
+	</LinearLayout>
+</LinearLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">팡팡대출계산기</string>
+    <string name="title_activity_main">팡팡대출계산기</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_show_account">ShowAccountActivity</string>
+    <string name="account_number">대출계좌번호</string>
+    <string name="interest_rate">대출이율</string>
+    <string name="end_date">만기일</string>
+    <string name="start_date">대출시작일</string>
+    <string name="repay_date">상환일</string>
+	<string name="modify_date">변경일</string>
+    <string name="last_repay_date">최종납입일</string>
+    <string name="amount">대출금</string>
+    <string name="repayment">상환</string>
+	<string name="repayment_cancel">상환 취소</string>
+	<string name="modify">변경</string>
+    <string name="repayment_price">상환액</string>
+	<string name="repayment_price_this_month">상환액(당월)</string>
+    <string name="repayment_period">상환 기간(월)\n(거치 기간 포함)</string>
+	<string name="remained_period">남은 기간(월)</string>
+    <string name="repayment_msg">상환할 금액을 입력하세요.</string>
+	<string name="repayment_cancel_msg">상환 취소할 월 을 선택하세요.</string>
+	<string name="modify_interest_rate_msg">변경할 이자율을 입력하세요.</string>
+	<string name="principal">원금</string>
+    <string name="interest">이자</string>
+	<string name="rest_money">잔액</string>
+    <string name="inserted_count">납입횟수</string>
+    <string name="total_count">총 기간(월)</string>
+	<string name="temp_period">거치 기간(월)</string>
+	<string name="calculate">계산</string>
+    <string name="ok">확인</string>
+    <string name="cancel">취소</string>
+    <string name="set_date">날짜 설정</string>
+    <string name="create_account">대출계좌등록</string>
+    <string name="modify_account">등록된 계좌 수정</string>
+	<string name="modify_interest">이자율 변경</string>
+    <string name="delete_account">등록된 계좌 삭제</string>
+    <string name="show_account">대출 계좌 조회</string>
+    <string name="invalid_date">유효하지 않은 날짜 입니다. 다시 입력 바랍니다.</string>
+    <string name="title_activity_cal_culate">CalCulateActivity</string>
+	<string name="invalid_total_count">유효하지 않은 상환기간 입니다. 다시 입력 바랍니다.</string>
+	<string name="there_is_account">이미 계좌가 있습니다. 계좌를 삭제하시고 다시 진행하시기 바랍니다.</string>
+	<string name="warning_delete">계좌를 정말 삭제하시겠습니까?</string>
+	<string name="exit">종료하시겠습니까?</string>
+	<string name="warinit_exit">계산기를 정말 종료하시겠습니까?</string>
+
+</resources>

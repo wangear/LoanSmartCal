@@ -1,0 +1,146 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context="wangjoo.pangloancalculator.ShowAccountActivity">
+
+	<LinearLayout
+		android:id="@+id/layout1"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content">
+
+		<TextView
+			android:id="@+id/tv_account_number"
+			android:layout_width="100dip"
+			android:layout_height="wrap_content"
+			android:text="@string/account_number"/>
+
+		<EditText
+			android:id="@+id/et_account_number"
+			android:layout_width="150dip"
+			android:layout_height="50dip"
+			android:layout_toRightOf="@+id/tv_account_number"
+			/>
+	</LinearLayout>
+
+	<LinearLayout
+		android:id="@+id/layout2"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/layout1">
+
+		<TextView
+			android:id="@+id/tv_amount"
+			android:layout_width="100dip"
+			android:layout_height="wrap_content"
+
+			android:text="@string/amount"/>
+
+		<EditText
+			android:id="@+id/et_amount"
+			android:layout_width="150dip"
+			android:layout_height="50dip"
+			android:layout_toRightOf="@+id/tv_amount"
+			android:numeric="integer"/>
+	</LinearLayout>
+
+	<LinearLayout
+		android:id="@+id/ll_interest_rate"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/layout2">
+
+		<TextView
+			android:id="@+id/tv_interest_rate"
+			android:layout_width="100dip"
+			android:layout_height="wrap_content"
+
+			android:text="@string/interest_rate"/>
+
+		<EditText
+			android:id="@+id/et_interest_rate"
+			android:layout_width="150dip"
+			android:layout_height="50dip"
+			android:layout_toRightOf="@+id/interest_rate"
+			android:numeric="decimal"/>
+	</LinearLayout>
+
+	<LinearLayout
+		android:id="@+id/ll_start_date"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/ll_interest_rate"
+		android:orientation="horizontal">
+
+		<TextView
+			android:layout_width="100dip"
+			android:layout_height="wrap_content"
+			android:text="@string/start_date"/>
+
+		<Button
+			android:id="@+id/btn_start_date"
+			android:text="@string/set_date"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+
+			/>
+	</LinearLayout>
+	<LinearLayout
+		android:id="@+id/ll_temp_priod"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/ll_start_date"
+		android:orientation="horizontal">
+
+		<TextView
+			android:layout_width="100dip"
+			android:layout_height="wrap_content"
+			android:text="@string/temp_period"
+			/>
+
+		<EditText
+
+			android:id="@+id/et_temp_period"
+			android:layout_width="150dip"
+			android:layout_height="50dip"
+			android:numeric="integer"
+
+			/>
+	</LinearLayout>
+	<LinearLayout
+		android:id="@+id/ll_remained_period"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/ll_temp_priod"
+		android:orientation="horizontal">
+
+		<TextView
+			android:layout_width="100dip"
+			android:layout_height="wrap_content"
+			android:text="@string/repayment_period"/>
+
+		<EditText
+
+			android:id="@+id/et_total_count"
+			android:layout_width="150dip"
+			android:layout_height="50dip"
+		    android:numeric="integer"
+			/>
+	</LinearLayout>
+	<Button
+		android:id="@+id/btn_ok"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/ll_remained_period"
+		android:text="@string/ok"/>
+
+	<Button
+		android:id="@+id/btn_cancel"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/ll_remained_period"
+		android:layout_toRightOf="@+id/btn_ok"
+
+		android:text="@string/cancel"/>
+
+</RelativeLayout>

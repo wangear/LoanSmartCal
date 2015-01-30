@@ -1,0 +1,101 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                tools:context="wangjoo.pangloancalculator.ShowAccountActivity">
+
+
+	<LinearLayout
+		android:id="@+id/ll_amount"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		>
+
+		<TextView
+			android:id="@+id/tv_amount"
+			android:layout_width="100dip"
+			android:layout_height="wrap_content"
+
+			android:text="@string/amount"/>
+
+		<EditText
+			android:id="@+id/et_amount"
+			android:layout_width="150dip"
+			android:layout_height="50dip"
+			android:layout_toRightOf="@+id/tv_amount"
+			android:numeric="integer"/>
+	</LinearLayout>
+
+	<LinearLayout
+		android:id="@+id/ll_interest_rate"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/ll_amount">
+
+		<TextView
+			android:id="@+id/tv_interest_rate"
+			android:layout_width="100dip"
+			android:layout_height="wrap_content"
+
+			android:text="@string/interest_rate"/>
+
+		<EditText
+			android:id="@+id/et_interest_rate"
+			android:layout_width="150dip"
+			android:layout_height="50dip"
+			android:layout_toRightOf="@+id/interest_rate"
+			android:numeric="decimal"/>
+	</LinearLayout>
+
+	<LinearLayout
+		android:id="@+id/ll_remained_period"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/ll_interest_rate"
+		android:orientation="horizontal">
+
+		<TextView
+			android:layout_width="100dip"
+			android:layout_height="wrap_content"
+			android:text="@string/remained_period"/>
+
+		<EditText
+
+			android:id="@+id/et_remained_period"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:numeric="decimal"
+			/>
+	</LinearLayout>
+	<LinearLayout
+		android:id="@+id/ll_repayment"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/ll_remained_period"
+		android:orientation="horizontal">
+
+		<TextView
+			android:layout_width="100dip"
+			android:layout_height="wrap_content"
+			android:text="@string/repayment_price"/>
+
+		<TextView
+
+			android:id="@+id/tv_repayment_value"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:numeric="decimal"
+			/>
+	</LinearLayout>
+	<Button
+		android:id="@+id/btn_calculate"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/ll_repayment"
+		android:text="@string/calculate"/>
+
+</RelativeLayout>
